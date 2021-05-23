@@ -1,0 +1,187 @@
+<!--    <header class="site-header">-->
+<!--        <div class="header-logo">-->
+<!--            <svg class="icon" aria-hidden="true">-->
+<!--                <use xlink:href="#icon-maotouying-copy"></use>-->
+<!--            </svg>-->
+<!--            <a href="#" class="header-logo-link">网址导航</a>-->
+<!--        </div>-->
+<!--        <svg class="icon" aria-hidden="true">-->
+<!--            <use xlink:href="#icon-celanliebiaogengduo"></use>-->
+<!--        </svg>-->
+
+<!--    </header>-->
+<!--    <aside class="siteSidebar">-->
+<!--        <div class="sidebar-header">-->
+<!--            <svg class="icon" aria-hidden="true">-->
+<!--                <use xlink:href="#icon-maotouying-copy"></use>-->
+<!--            </svg>-->
+<!--            <h1>-->
+<!--                <a href="#" class="header-logo-link">-->
+<!--                    <span>网址导航</span>-->
+<!--                </a>-->
+<!--            </h1>-->
+<!--        </div>-->
+<!--        <div class="sidebar-nav">-->
+<!--            <ul class="sidebar-nav">-->
+<!--                <li class="sidebar-nav-item">-->
+<!--                    个人收藏-->
+<!--                </li>-->
+<!--                <li class="sidebar-nav-item">-->
+<!--                    网址导航-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="sidebar-footer"></div>-->
+<!--    </aside>-->
+
+
+
+
+           <div class="site-card">
+                <h3 class="site-card-title">
+                    <a href="https://www.github.com" target="_blank">Github</a>
+                </h3>
+                <div class="site-card-body">
+                    <p class="site-card-text">github.com</p>
+                </div>
+            </div>
+            <div class="site-card">
+                <h3 class="site-card-title">
+                    <a href="https://juejin.cn/" target="_blank">掘金</a>
+                </h3>
+                <div class="site-card-body">
+                    <p class="site-card-text">juejin.cn</p>
+                </div>
+            </div>
+            <div class="site-card">
+                <h3 class="site-card-title">
+                    <a href="https://www.bilibili.com/" target="_blank">Bilibili</a>
+                </h3>
+                <div class="site-card-body">
+                    <p class="site-card-text">bilibili.com</p>
+                </div>
+            </div>
+            <div class="site-card">
+                <h3 class="site-card-title">
+                    <a href="https://www.ted.com/" target="_blank">TED</a>
+                </h3>
+                <div class="site-card-body">
+                    <p class="site-card-text">ted.com</p>
+                </div>
+            </div>
+            <div class="site-card">
+                <h3 class="site-card-title">
+                    <a href="https://www.taobao.com/" target="_blank">淘宝</a>
+                </h3>
+                <div class="site-card-body">
+                    <p class="site-card-text">taobao.com</p>
+                </div>
+            </div>
+            <div class="site-card">
+                <h2 class="site-card-title">
+                    <a href="https://weibo.com/" target="_blank">新浪微博</a>
+                </h2>
+                <div class="site-card-body">
+                    <p class="site-card-text">weibo.com</p>
+                </div>
+            </div>
+            <div class="site-card">
+                <h3 class="site-card-title">
+                    <a href="https://www.zhihu.com/" target="_blank">知乎</a>
+                </h3>
+                <div class="site-card-body">
+                    <p class="site-card-text">zhihu.com</p>
+                </div>
+            </div>
+            <div class="site-card">
+                <h3 class="site-card-title">
+                    <a href="https://cloud.tencent.com/" target="_blank">腾讯云</a>
+                </h3>
+                <div class="site-card-body">
+                    <p class="site-card-text">cloud.tencent.com</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="nav-card">
+                <h3 class="nav-card-title">
+                    <a href="https://developer.mozilla.org/zh-CN/" target="_blank">Mozilla</a>
+                </h3>
+                <div class="nav-card-body">
+                    <p class="nav-card-text">developer.mozilla.org</p>
+                </div>
+            </div>
+            <div class="nav-card">
+                <h3 class="nav-card-title">
+                    <a href="https://caniuse.com/" target="_blank">Can I Use</a>
+                </h3>
+                <div class="nav-card-body">
+                    <p class="nav-card-text">caniuse.com</p>
+                </div>
+            </div>
+            <div class="nav-card">
+                <h3 class="nav-card-title">
+                    <a href="https://www.bootcdn.cn/" target="_blank">BootCDN</a>
+                </h3>
+                <div class="nav-card-body">
+                    <p class="nav-card-text">bootcdn.cn</p>
+                </div>
+            </div>
+            <div class="nav-card">
+                <h3 class="nav-card-title">
+                    <a href="https://www.iconfont.cn" target="_blank">iconfont</a>
+                </h3>
+                <div class="nav-card-body">
+                    <p class="nav-card-text">iconfont.cn</p>
+                </div>
+            </div>
+            <div class="nav-card">
+                <h3 class="nav-card-title">
+                    <a href="https://jsbin.com/" target="_blank">JS Bin</a>
+                </h3>
+                <div class="nav-card-body">
+                    <p class="nav-card-text">jsbin.com</p>
+                </div>
+            </div>
+            <div class="nav-card">
+                <h3 class="nav-card-title">
+                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                </h3>
+                <div class="nav-card-body">
+                    <p class="nav-card-text">getbootstrap.com</p>
+                </div>
+            </div>
+            <div class="nav-card">
+                <h3 class="nav-card-title">
+                    <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>
+                </h3>
+                <div class="nav-card-body">
+                    <p class="nav-card-text">cloudflare.com</p>
+                </div>
+            </div>
+
+
+
+
+                    // 针对移动端 :hover 失效，改为长按删除
+        let start_time = 0;
+        let end_time = 0;
+        $curr_site.addEventListener('touchstart',()=>{
+            start_time = +new Date();
+            console.log(start_time);
+        });
+        $curr_site.addEventListener('touchend', (e)=>{
+            end_time = +new Date();
+            console.log(end_time);
+            if ((end_time - start_time) > 500){
+                confirm_delete = confirm('确认删除？');
+                if(confirm_delete){
+                    e.stopPropagation();
+                    favourites.splice(index,1);
+                    console.log('成功删除')
+                    render();
+                }
+            }
+        });
