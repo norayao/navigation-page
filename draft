@@ -185,3 +185,16 @@
                 }
             }
         });
+
+
+        $target_site = $target.find('span').className
+                switch ($target){
+                    case 'google':
+                        console.log('google');
+                        break;
+                    case 'bing':
+                        console.log('bing');
+                        break;
+                    case 'baidu':
+                        console.log('baidu');
+                }

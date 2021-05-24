@@ -37,23 +37,21 @@ const sites = sites_local || [
 
 const $favourites_list = $('.favourites-list');
 const $sites_list = $('.sites-list');
+const $add_button = $('.add-button');
 
 const render = () =>{
     $favourites_list.find('div:not(.add-button)').remove();
     $sites_list.find('div').remove();
-    $add_button = $('.add-button');
+
 
     favourites.forEach((node,index) =>{
         let url = node.url;
+        let title = node.title;
         let text = node.text;
-        let title = '';
-        if(isMobile){
-            title = node.title[0];
-            text = text.replace(/\..*/, '')
-        }
-        else {
-            title = node.title;
-        }
+
+        isMobile ? title = title[0] : title;
+        isMobile ? text = text.replace(/\..*/, '') : text;
+
 
         const $curr_site = $(`
             <div class="site-card">
@@ -82,7 +80,7 @@ const render = () =>{
                 end_time = +new Date();
                 console.log(end_time);
                 if ((end_time - start_time) > 500){
-                    confirm_delete = confirm('确认删除？');
+                    let confirm_delete = confirm('确认删除？');
                     if(confirm_delete){
                         e.stopPropagation();
                         favourites.splice(index,1);
@@ -133,7 +131,7 @@ const render = () =>{
 // 调用渲染，显示favourites-list, sites-list
 render();
 
-$('.add-button').on('click',()=>{
+$add_button.on('click',()=>{
     let site_title = window.prompt('请输入网站的名字：');
     let site_url = window.prompt('请输入您要添加的网址：');
     let site_text = simplify_url(site_url).toLowerCase();
@@ -148,11 +146,45 @@ $('.add-button').on('click',()=>{
     render();
 })
 
-
 window.onbeforeunload = () =>{
     const favToString = JSON.stringify(favourites);
-    const siteToString = JSON.stringify(site_storage);
+    const siteToString = JSON.stringify(sites);
     localStorage.setItem('fav_storage',favToString);
     localStorage.setItem('site_storage',siteToString);
 }
 
+// search bar selection
+
+$search_form = $('.search-form');
+$search_value = $('.search-value');
+
+$(".search-target-list li").click(function() {
+    let text = this.innerText.trim()
+    console.log(text);
+    $this = $(this);
+    switch (text){
+        case 'Google':
+            console.log('here is google')
+            $this.addClass('selected');
+            $this.siblings('li').removeClass('selected');
+            $search_form.attr('action','https://www.google.com/search');
+            $search_value.attr('name','q');
+            console.log('success');
+            break;
+        case 'Bing':
+            console.log('here is bing')
+            $this.addClass('selected');
+            $this.siblings('li').removeClass('selected');
+            $search_form.attr('action','https://cn.bing.com/search?');
+            $search_value.attr('name','q');
+            console.log('success');
+            break;
+        case 'Baidu':
+            console.log('here is baidu');
+            $this.addClass('selected');
+            $this.siblings('li').removeClass('selected');
+            $search_form.attr('action','https://www.baidu.com/s');
+            $search_value.attr('name','wd');
+            console.log('success');
+    }
+});
