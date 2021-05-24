@@ -28,6 +28,7 @@ const sites = sites_local || [
     {title:'JS Bin',text:'代码片段调试',url:'https://jsbin.com/'},
     {title:'Bootstrap',text:'开源前端框架',url:'https://getbootstrap.com/'},
     {title:'Cloudflare',text:'CDN 域名解析',url:'https://www.cloudflare.com/'},
+    {title: 'Stack Overflow', text: '实用问答社区', url:'https://stackoverflow.com'}
 ]
 
 const $favourites_list = $('.favourites-list');
@@ -43,7 +44,8 @@ const render = () =>{
         let text = node.text;
         let title = '';
         if(isMobile){
-            title = node.title[0]
+            title = node.title[0];
+            text = text.replace(/\..*/, '')
         }
         else {
             title = node.title;
@@ -104,11 +106,6 @@ const render = () =>{
                 render();
             });
         }
-
-
-
-
-
     });
 
     sites.forEach((node,index) =>{

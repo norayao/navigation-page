@@ -21,6 +21,7 @@ body{
     background: #eeeeee;
 }
 
+/*search box*/
 .search{
     margin: 8px 20px 20px 20px;
 }
@@ -29,7 +30,7 @@ body{
 }
 .search-target-list > li{
     display: inline-flex;
-    margin: 8px 8px 8px 0px;
+    margin: 8px 8px 8px 0;
 }
 .search-target-list > li > svg {
     margin-top: 2px;
@@ -45,18 +46,20 @@ body{
 .search-button{
     width: 25px;
     height: 25px;
-    margin: 8px 0px 5px -35px;
+    margin: 8px 0 5px -35px;
     border-width: 0;
     background: url("imgs/search.svg") #fff no-repeat;
     background-size: 25px 25px
 }
-.container {
-}
+
 .container > h2{
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
+
+/*favourites list*/
 .favourites-list{
     display: flex;
     flex-direction: row;
@@ -74,6 +77,18 @@ body{
     border-radius: 6px;
     position: relative;
 }
+.site-card > h3{
+    display: flex;
+    justify-content: space-around;
+    font-size: 26px;
+    line-height: 42px;
+}
+.site-card > .site-card-body{
+    display: flex;
+    justify-content: space-around;
+    font-size: 8px;
+    color: #777;
+}
 .site-card > .close{
     position: absolute;
     right: 4px;
@@ -83,4 +98,43 @@ body{
 }
 .site-card:hover > .close {
     display: block;
+}
+
+.favourites-list > .add-button >svg{
+    width: 36px;
+    height: 36px;
+    margin-top: 13px;
+    margin-left: 13px;
+}
+
+/*navigations list*/
+.sites-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.nav-card{
+    width: 152px;
+    height: 64px;
+    margin-left: 24px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+}
+.nav-card > h3{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    line-height: 42px;
+    color: #0275D8;
+}
+.nav-card > .nav-card-body{
+    display: flex;
+    justify-content: space-around;
+    font-size: 8px;
+    color: #777;
 }
