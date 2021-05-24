@@ -1,13 +1,17 @@
 // Navigator 对象包含一些有关浏览器的信息，
 // userAgent是该对象的一个只读属性，声明了浏览器用于 HTTP 请求的用户代理头的值
 // 通过判断navigator.useragent里面是否有某些值来判断当前的客户端是什么状态
-var isMobile = /Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)
+var isMobile = /Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent);
+
+// 移除URL中的多余部分
 const simplify_url = (url) => {
     return url.replace('https://', '')
         .replace('http://', '')
         .replace('www.', '')
         .replace(/\/.*/, '') // 删除 / 开头的内容
 }
+
+// 读取local_storage中储存的网站
 const favourites_local = JSON.parse(localStorage.getItem('fav_storage'));
 const sites_local = JSON.parse(localStorage.getItem('site_storage'));
 const favourites = favourites_local || [
@@ -66,7 +70,6 @@ const render = () =>{
         $curr_site.on('click', () => {
             window.open(url);
         });
-
 
         if(isMobile){
             let start_time = 0;
@@ -133,7 +136,7 @@ render();
 $('.add-button').on('click',()=>{
     let site_title = window.prompt('请输入网站的名字：');
     let site_url = window.prompt('请输入您要添加的网址：');
-    let site_text = simplify_url(site_url);
+    let site_text = simplify_url(site_url).toLowerCase();
     if (site_url.indexOf('http') !== 0) {
         site_url = 'https://' + site_url
     }
