@@ -49,7 +49,7 @@ const render = () =>{
         let title = node.title;
         let text = node.text;
 
-        isMobile ? title = title[0] : title;
+        isMobile ? title = title[0].toUpperCase() : title;
         isMobile ? text = text.replace(/\..*/, '') : text;
 
 
@@ -154,7 +154,6 @@ window.onbeforeunload = () =>{
 }
 
 // search bar selection
-
 $search_form = $('.search-form');
 $search_value = $('.search-value');
 
@@ -188,3 +187,21 @@ $(".search-target-list li").click(function() {
             console.log('success');
     }
 });
+
+// only for favourites-list
+let isFocus = document.getElementsByClassName('search-value');
+if (!isFocus){
+
+    $(document).on('keypress', (e) => {
+        const {key} = e
+        for (let i = 0; i < favourites.length; i++) {
+            if (favourites[i].title[0].toLowerCase() === key) {
+                window.open(favourites[i].url)
+            }
+        }
+    });
+
+}
+if (window.click()){
+
+}
