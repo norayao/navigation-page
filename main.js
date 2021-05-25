@@ -174,7 +174,7 @@ $(".search-target-list li").click(function() {
             console.log('here is bing')
             $this.addClass('selected');
             $this.siblings('li').removeClass('selected');
-            $search_form.attr('action','https://cn.bing.com/search?');
+            $search_form.attr('action','https://cn.bing.com/search');
             $search_value.attr('name','q');
             console.log('success');
             break;
