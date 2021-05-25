@@ -189,9 +189,7 @@ $(".search-target-list li").click(function() {
 });
 
 // only for favourites-list
-let isFocus = document.getElementsByClassName('search-value');
-if (!isFocus){
-
+function hotkey(){
     $(document).on('keypress', (e) => {
         const {key} = e
         for (let i = 0; i < favourites.length; i++) {
@@ -200,8 +198,9 @@ if (!isFocus){
             }
         }
     });
-
 }
-if (window.click()){
-
-}
+// 通过禁止冒泡，阻止 keypress 触发 hotkey
+$search_value.bind('keypress', function(e) {
+    e.stopPropagation();
+});
+hotkey();
