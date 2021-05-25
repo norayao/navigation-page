@@ -193,7 +193,7 @@ function hotkey(){
     $(document).on('keypress', (e) => {
         const {key} = e
         for (let i = 0; i < favourites.length; i++) {
-            if (favourites[i].title[0].toLowerCase() === key) {
+            if (favourites[i].text[0].toLowerCase() === key) {
                 window.open(favourites[i].url)
             }
         }
